@@ -7,13 +7,18 @@ status = input("Введите статус заметки: ")
 created_date = input("Дата создания заметки в формате ДД-ММ-ГГГГ: ")
 issue_date = input("Срок исполнения в формате ДД-ММ-ГГГГ: ")
 
-note = [
-username,
-content,
-status,
-created_date,
-issue_date,
-[title1, title2, title3]
-]
+note = {
+"username" : username,
+"content" : content,
+"status" : status,
+"created_date" : created_date,
+"issue_date" : issue_date,
+"titles" : [title1, title2, title3]
+}
 
-print(note)
+print(note["username"])
+print(note["content"])
+print(note["status"])
+print(note["created_date"])
+print(note["issue_date"])
+print(note["titles"])
