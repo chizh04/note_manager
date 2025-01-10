@@ -16,9 +16,9 @@ note = {
 "titles" : [title1, title2, title3]
 }
 
-print(note["username"])
-print(note["content"])
-print(note["status"])
-print(note["created_date"])
-print(note["issue_date"])
-print(note["titles"])
+print("Имя пользователя: ", note["username"])
+print("Содержание заметки: ", note["content"])
+print("Статус заметки: ", note["status"])
+print("Дата создания заметки: ", note["created_date"])
+print("Дэдлайн: ", note["issue_date"])
+print("Заголовки заметки: ", note["titles"])
