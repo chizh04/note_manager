@@ -11,15 +11,15 @@ print("Возможные статусы заметки: \n"
 # Функционал для изменения пользователем статуса заметки:
 while True:
     status = input("Введите новый статус заметки из возможных (или его порядковый номер): ")
-    if status == "1" or status == "Отложено" or status == "отложено":
+    if status == "1" or status.lower() == "отложено":
         status_ = dict_status[0]
         input_status[0] = status_
         break
-    elif status == "2" or status == "Выполнено" or status == "выполнено":
+    elif status == "2" or status.lower() == "выполнено":
         status_ = dict_status[1]
         input_status[0] = status_
         break
-    elif status == "3" or status == "В работе" or status == "в работе":
+    elif status == "3" or status.lower() == "в работе":
         status_ = dict_status[2]
         input_status[0] = status_
         break

@@ -58,15 +58,15 @@ while x == len(notes):
             deadline = add_deadline()
 
             quantitu_titles = quantitu_titles + 1
-
-    notes[title] = [name, title, content, status, created_date, deadline]
+    key_ = x + 1
+    notes[key_] = [name, title, content, status, created_date, deadline]
     # Запрос на добавление еще одной заметки:
     while True:
         Add_ = input("Вы желаете добавить еще одну заметку? ")
-        if Add_ == "Да" or Add_ == "да":
+        if Add_.lower() == "да":
             x = x + 1
             break
-        elif Add_ == "Нет" or Add_ == "нет":
+        elif Add_.lower() == "нет":
             break
         else:
             print("Ваш ответ не ясен, повторите ввод")
